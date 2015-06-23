@@ -465,7 +465,7 @@ function collection( $model, $clause, $duration=null ) {
 			$dbx = $db;
 		}
 		// execute the query
-        elapsed('begin SQL: ' . $sql);
+        elapsed('begin SQL: ' . $sql); 
 		$rows = $dbx->query($sql, PDO::FETCH_OBJ);
         elapsed('end SQL');
 		return $rows->fetchAll();
